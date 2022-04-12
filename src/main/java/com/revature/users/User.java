@@ -73,9 +73,6 @@ public class User implements Searchable {
                 "id='" + id + '\'' +
                 ", userSettings=" + userSettings +
                 ", email='" + email + '\'' +
-                ", following=" + following +
-                ", groups=" + groups +
-                ", follower=" + follower +
                 '}';
     }
 }
