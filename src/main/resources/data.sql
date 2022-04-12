@@ -1,3 +1,7 @@
+insert into notification_type values
+	(1, 'like'),
+	(2, 'comment');
+
 insert into users (user_id, EMAIL) values ('e3mkyWLcXnY0KpKwK8WBtHxJvn72', 'dev@dev.com');
 insert into user_profile (ID, ABOUT_ME, BIRTHDAY, FIRST_NAME, HEADER_IMG, HOBBY, LAST_NAME, LOCATION, PROFILE_IMG, USER_ID_fk)
 values ('11585e78-9f20-4377-9aff-ed992fe8c4a3', 'I just joined Reverb!', 'A Mystery...', 'Developer', 'https://www.windowslatest.com/wp-content/uploads/2017/10/Windows-XP-min.jpg',
@@ -24,5 +28,3 @@ values ('e2e4e098-3cda-4a57-9bbb-8882f60687b5', 'Test Description', 'Group Test'
 insert into groups_users (groups_group_id, users_user_id) values ('e2e4e098-3cda-4a57-9bbb-8882f60687b5','e3mkyWLcXnY0KpKwK8WBtHxJvn72');
 
 insert into groups_users (groups_group_id, users_user_id) values ('121a0e62-6790-41ef-b975-bb406691e16b', 'jcrgLpKKFFgFeZalC50a6H9CQxx1');
-
---insert into notification_user (notification_id_fk, user_id_fk) values ('121a0e62-6790-41ef-b975-bb406691e16b', 'jcrgLpKKFFgFeZalC50a6H9CQxx1');
