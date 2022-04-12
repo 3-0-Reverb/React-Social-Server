@@ -11,7 +11,6 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(path = "api/like")
-@CrossOrigin
 public class LikeController {
     private LikeService likeService;
 
