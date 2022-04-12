@@ -13,7 +13,6 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(path = "api/comment")
-@CrossOrigin
 public class CommentController {
     private final CommentService commentService;
 
