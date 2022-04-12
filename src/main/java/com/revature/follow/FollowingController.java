@@ -138,9 +138,7 @@ public class FollowingController {
 
     @GetMapping(path="/getFollowingProfilesByUserId/{userId}")
     public List<FollowerResponse> getFollowingProfilesByUserId(@PathVariable String userId){
-        System.out.println(userId);
         User user = userRepository.findUserById(userId);
-        System.out.println(user);
         List<User> followings = followingService.getFollowings(user);
 
         // for loop to get profile for each user in followers list
