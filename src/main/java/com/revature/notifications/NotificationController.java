@@ -38,9 +38,9 @@ public class NotificationController {
 
     //Get all Notification by Owner
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/owner/{ownerId}", produces = "application/json")
-    public List<NotificationResponse> getNotificationByOwner(@PathVariable String ownerId) {
-        return notificationService.getNotificationByOwner(ownerId);
+    @GetMapping(value = "/notified/{otherUserId}", produces = "application/json")
+    public List<NotificationResponse> getNotificationByOwner(@PathVariable String otherUserId) {
+        return notificationService.getNotificationByOtherUser(otherUserId);
     }
 
     // Create Notification

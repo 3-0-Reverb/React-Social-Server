@@ -13,8 +13,8 @@ public interface NotificationRepository extends CrudRepository<Notification, Str
 
     Optional<Notification> findNotificationById(String id);
 
-    @Query("SELECT n From Notification n WHERE n.isRead = false")
-    Iterable<Notification> findNotificationByOwnerId(String owner_id_fk);
+    @Query(value = "SELECT * FROM notifications n WHERE n.other_user_id_fk = ?1 AND n.is_read = false", nativeQuery = true)
+    Iterable<Notification> findNotificationByOtherUserId(String otherUserId);
 
     @Modifying
     @Transactional
