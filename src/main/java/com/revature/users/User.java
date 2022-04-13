@@ -71,8 +71,6 @@ public class User implements Searchable {
     public String toString() {
         return "User{" +
                 "id='" + id + '\'' +
-                ", userSettings=" + userSettings +
-                ", email='" + email + '\'' +
-                '}';
+                ", email='" + email + '\'';
     }
 }

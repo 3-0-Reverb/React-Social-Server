@@ -24,6 +24,7 @@ public class ReverbAppDummy implements CommandLineRunner {
         NotificationType comment = new NotificationType();
         comment.setId("2");
         comment.setTypeName("comment");
+
         if (!notificationTypeRepository.existsById("1")){
             notificationTypeRepository.save(like);
             notificationTypeRepository.save(comment);
