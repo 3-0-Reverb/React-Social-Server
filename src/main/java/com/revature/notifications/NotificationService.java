@@ -51,13 +51,13 @@ public class NotificationService {
 
 
     /**
-     * @param ownerId - Id of notification to be fetched
+     * @param otherUserId - Id of notification to be fetched
      * @return - Response entity representing notification
      */
-    public List<NotificationResponse> getNotificationByOwner(String ownerId) {
+    public List<NotificationResponse> getNotificationByOtherUser(String otherUserId) {
         List<NotificationResponse> notificationResponseList = new ArrayList<>();
 
-        notificationRepository.findNotificationByOwnerId(ownerId).iterator()
+        notificationRepository.findNotificationByOtherUserId(otherUserId).iterator()
                 .forEachRemaining(n -> notificationResponseList.add(new NotificationResponse(n)));
 
         return notificationResponseList;

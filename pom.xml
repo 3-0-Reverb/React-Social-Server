@@ -174,6 +174,7 @@
 						<artifactId>jacoco-maven-plugin</artifactId>
 						<version>0.8.7</version>
 						<configuration>
+
 							<excludes>
 								<exclude>com/revature/**/*Configuration.*</exclude>
 								<exclude>com/revature/**/*Repository.*</exclude>
@@ -197,6 +198,7 @@
 								<exclude>com/revature/**/SearchCache.*</exclude>
 
 							</excludes>
+              
 						</configuration>
 						<executions>
 							<execution>
