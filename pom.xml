@@ -173,6 +173,31 @@
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
 						<version>0.8.7</version>
+						<configuration>
+							<excludes>
+								<exclude>com/revature/**/*Configuration.*</exclude>
+								<exclude>com/revature/**/*Repository.*</exclude>
+								<exclude>com/revature/users/usersettings/*</exclude>
+								<exclude>com/revature/**/*Result.*</exclude>
+								<exclude>com/revature/**/*Bucket.*</exclude>
+								<exclude>com/revature/**/dtos/*</exclude>
+								<exclude>com/revature/security/**</exclude>
+								<exclude>com/revature/**/*Response.*</exclude>
+								<exclude>com/revature/**/Profile.*</exclude>
+								<exclude>com/revature/**/Comment.*</exclude>
+								<exclude>com/revature/**/common/**</exclude>
+								<exclude>com/revature/**/exceptions/*</exclude>
+								<exclude>com/revature/**/Notification.*</exclude>
+								<exclude>com/revature/notifications/notificationType/*</exclude>
+								<exclude>com/revature/**/postmeta/*</exclude>
+								<exclude>com/revature/*</exclude>
+								<exclude>com/revature/**/Post.*</exclude>
+								<exclude>com/revature/**/Group.*</exclude>
+								<exclude>com/revature/**/User.*</exclude>
+								<exclude>com/revature/**/SearchCache.*</exclude>
+
+							</excludes>
+						</configuration>
 						<executions>
 							<execution>
 								<id>prepare-agent</id>
